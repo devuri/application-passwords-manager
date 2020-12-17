@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Brisko Hooks Display">
+<ruleset name="Application Passwords Manager">
 
 	<description>A custom set of rules to check for a WP</description>
 
