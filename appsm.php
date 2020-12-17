@@ -1,18 +1,18 @@
 <?php
 /**
- * Disable App Passwords
+ * Application Passwords Manager
  *
- * @package   DisableAppPasswords
+ * @package   ApplicationPasswordsManager
  * @author    Uriel Wilson
  * @copyright 2020 Uriel Wilson
  * @license   GPL-2.0
  * @link      https://urielwilson.com
  *
  * @wordpress-plugin
- * Plugin Name:       Disable App Passwords
+ * Plugin Name:       Application Passwords Manager
  * Plugin URI:        https://switchwebdev.com/wordpress-plugins/
  * Description:       This plugin will disable WordPress 5.6 Application Passwords.
- * Version:           0.0.6
+ * Version:           0.0.7
  * Requires at least: 5.6
  * Requires PHP:      5.6
  * Author:            SwitchWebdev.com

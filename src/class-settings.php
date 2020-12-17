@@ -29,7 +29,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 		 *
 		 * @var $settings_field
 		 */
-		private $settings_field = 'sim_disable_application_passwords';
+		private $settings_field = 'apsm_status';
 
 		/**
 		 * Settings field name
@@ -119,8 +119,8 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 				$checked = '';
 			}
 
-			?><label for="sim_disable_application_passwords">
-				<input name="sim_disable_application_passwords" type="checkbox" id="sim_disable_application_passwords" value="1" <?php echo esc_attr( $checked ); ?>>
+			?><label for="apsm_status">
+				<input name="apsm_status" type="checkbox" id="apsm_status" value="1" <?php echo esc_attr( $checked ); ?>>
 					<?php echo esc_attr__( 'Disable Application Passwords.', 'disable-app-passwords' ); ?>
 				</label>
 			<?php

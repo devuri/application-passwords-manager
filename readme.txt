@@ -1,10 +1,10 @@
-=== Disable App Passwords ===
+=== Application Passwords Manager ===
 Contributors: icelayer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6D6W2KXB88NKE
 Tags: application passwords, passwords, application,
 Requires at least: 5.6
 Tested up to: 5.6
-Stable tag: 0.0.6
+Stable tag: 0.0.7
 Requires PHP: 5.6
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

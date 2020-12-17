@@ -59,7 +59,7 @@ if ( ! class_exists( 'SwitchWeb\Application_Passwords' ) ) {
 	    private function is_disabled() {
 
 			// get the current status.
-			$status = get_option( 'sim_disable_application_passwords', 1 );
+			$status = get_option( 'apsm_status', 1 );
 
 			// set to bool.
 			$status = boolval( $status );
