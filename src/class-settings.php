@@ -116,7 +116,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 		 */
 		private function checkbox_input() {
 
-			if ( true === $this->disable_status() ) {
+			if ( 1 === absint( get_option( $this->settings_field ) ) ) {
 				$checked = 'checked';
 			} else {
 				$checked = '';
