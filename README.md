@@ -1,4 +1,4 @@
-> **Note:** This is the development version and contains features that may be in various stages of development. If you want to use this on a live website download here: [Application Passwords Manager](https://wordpress.org/plugins/wp-disable-app-passwords/).
+> **Note:** This is the development version and contains features that may be in various stages of development. If you want to use this on a live website download here: [Application Passwords Manager](https://wordpress.org/plugins/application-passwords-manager/).
 
 ### Application Passwords Manager
 This plugin will disable/enable WordPress 5.6 Application Passwords.

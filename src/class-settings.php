@@ -79,12 +79,15 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 
 	        add_settings_field(
 				$this->settings_field,
-				esc_attr__( 'Disable Application Passwords', 'disable-app-passwords' ),
-				array( $this, 'field_output' ),
+				__( 'Disable Application Passwords', 'application-passwords-manager' ),
+				array( $this, 'render_settings_html' ),
 				$this->page,
 				'default',
 				array(
-					'label_for' => $this->settings_field,
+					'type'        => 'checkbox',
+					'name'        => $this->settings_field,
+					'label_for'   => $this->settings_field,
+					'description' => __( 'Check to Disable Application Passwords', 'application-passwords-manager' ),
 				),
 			);
 	    }
@@ -92,7 +95,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 		/**
 		 * Callback
 		 */
-		public function field_output() {
+		public function render_settings_html() {
 			$this->checkbox_input();
 	    }
 
@@ -104,7 +107,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 			if ( false === get_option( $this->settings_field, false ) ) {
 				return false;
 			}
-			$status = get_option( $this->settings_field );
+			$status = absint( get_option( $this->settings_field ) );
 			return boolval( $status );
 	    }
 
@@ -119,9 +122,9 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 				$checked = '';
 			}
 
-			?><label for="apsm_status">
-				<input name="apsm_status" type="checkbox" id="apsm_status" value="1" <?php echo esc_attr( $checked ); ?>>
-					<?php echo esc_attr__( 'Disable Application Passwords.', 'disable-app-passwords' ); ?>
+			?><label for="<?php echo esc_attr( $this->settings_field ); ?>">
+				<input name="<?php echo esc_attr( $this->settings_field ); ?>" type="checkbox" id="<?php echo esc_attr( $this->settings_field ); ?>" value="1" <?php echo esc_attr( $checked ); ?>>
+					<?php esc_html_e( 'Disable Application Passwords.', 'application-passwords-manager' ); ?>
 				</label>
 			<?php
 		}
