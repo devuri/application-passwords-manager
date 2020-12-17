@@ -79,7 +79,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 
 	        add_settings_field(
 				$this->settings_field,
-				esc_attr__( 'Disable Application Passwords', 'disable-app-passwords' ),
+				esc_attr__( 'Disable Application Passwords', 'application-passwords-manager' ),
 				array( $this, 'field_output' ),
 				$this->page,
 				'default',
@@ -121,7 +121,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 
 			?><label for="apsm_status">
 				<input name="apsm_status" type="checkbox" id="apsm_status" value="1" <?php echo esc_attr( $checked ); ?>>
-					<?php echo esc_attr__( 'Disable Application Passwords.', 'disable-app-passwords' ); ?>
+					<?php echo esc_attr__( 'Disable Application Passwords.', 'application-passwords-manager' ); ?>
 				</label>
 			<?php
 		}
