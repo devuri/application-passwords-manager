@@ -9,7 +9,7 @@ Requires PHP: 5.6
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin will disable WordPress 5.6 Application Passwords.
+This plugin will disable/enable WordPress 5.6 Application Passwords.
 
 == Description ==
 
