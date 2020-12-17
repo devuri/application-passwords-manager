@@ -20,14 +20,24 @@ if ( ! class_exists( 'SwitchWeb\Application_Passwords' ) ) {
 		}
 
 		/**
-		 * Theme Setup
+		 * Setup
 		 */
 		private function __construct() {
 
-			// Application Passwords check
+			// Add settings field.
+			$this->settings();
+
+			// Application Passwords check.
 			if ( $this->is_available() ) {
 				$this->disable();
 			}
+		}
+
+		/**
+		 * Get Settings
+		 */
+		private function settings() {
+			Settings::init();
 		}
 
 		/**
@@ -49,12 +59,12 @@ if ( ! class_exists( 'SwitchWeb\Application_Passwords' ) ) {
 	    private function is_disabled() {
 
 			// get the current status.
-			$status = get_option( 'wpap_status', 0 );
+			$status = get_option( 'sim_disable_application_passwords', 1 );
 
 			// set to bool.
 			$status = boolval( $status );
 
-	    	if ( true === $wpap_status ) {
+	    	if ( true === $status ) {
 	        	return true;
 	      	} else {
 	        	return false;

@@ -12,7 +12,7 @@
  * Plugin Name:       Disable App Passwords
  * Plugin URI:        https://switchwebdev.com/wordpress-plugins/
  * Description:       This plugin will disable WordPress 5.6 Application Passwords.
- * Version:           0.0.3
+ * Version:           0.0.6
  * Requires at least: 5.6
  * Requires PHP:      5.6
  * Author:            SwitchWebdev.com
@@ -31,9 +31,10 @@
 // -----------------------------------------------------------------------------
 
 	/**
-	 *  Load the main class.
+	 *  Load class.
 	 */
 	require_once plugin_dir_path( __FILE__ ) . '/src/class-application-passwords.php';
+	require_once plugin_dir_path( __FILE__ ) . '/src/class-settings.php';
 
 	/**
 	 * Application Passwords
