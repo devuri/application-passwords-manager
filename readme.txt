@@ -1,4 +1,4 @@
-=== Disable App Passwords ===
+=== Application Passwords Manager ===
 Contributors: icelayer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6D6W2KXB88NKE
 Tags: application passwords, passwords, application,
