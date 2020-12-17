@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: application passwords, passwords, application,
 Requires at least: 5.6
 Tested up to: 5.6
-Stable tag: 0.0.4
+Stable tag: 0.0.6
 Requires PHP: 5.6
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@ This plugin will disable WordPress 5.6 Application Passwords.
 == Description ==
 
 This plugin will give you the option to Disable Application Passwords.
-after Activation you can manage in the General Settings Page,
+after Activation you can manage in the General Settings,
 Application Passwords were introduced in WordPress 5.6
 
 
