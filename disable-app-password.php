@@ -31,9 +31,10 @@
 // -----------------------------------------------------------------------------
 
 	/**
-	 *  Load the main class.
+	 *  Load class.
 	 */
 	require_once plugin_dir_path( __FILE__ ) . '/src/class-application-passwords.php';
+	require_once plugin_dir_path( __FILE__ ) . '/src/class-settings.php';
 
 	/**
 	 * Application Passwords
