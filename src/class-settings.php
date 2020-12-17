@@ -107,7 +107,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 			if ( false === get_option( $this->settings_field, false ) ) {
 				return false;
 			}
-			$status = get_option( $this->settings_field );
+			$status = absint( get_option( $this->settings_field ) );
 			return boolval( $status );
 	    }
 
