@@ -12,7 +12,7 @@
  * Plugin Name:       Application Passwords Manager
  * Plugin URI:        https://switchwebdev.com/wordpress-plugins/
  * Description:       This plugin will disable/enable WordPress 5.6 Application Passwords.
- * Version:           0.0.9
+ * Version:           0.1.3
  * Requires at least: 5.6
  * Requires PHP:      5.6
  * Author:            SwitchWebdev.com
