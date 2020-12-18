@@ -74,7 +74,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 					'sanitize_callback' => 'absint',
 					'show_in_rest'      => true,
 					'default'           => 0,
-				),
+				)
 			);
 
 	        add_settings_field(
@@ -88,7 +88,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 					'name'        => $this->settings_field,
 					'label_for'   => $this->settings_field,
 					'description' => __( 'Check to Disable Application Passwords', 'application-passwords-manager' ),
-				),
+				)
 			);
 	    }
 
