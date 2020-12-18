@@ -31,6 +31,16 @@
 // -----------------------------------------------------------------------------
 
 	/**
+	 * Setup options on activation
+	 */
+	register_activation_hook( __FILE__, function () {
+			if ( false === get_option( 'apsm_status', false ) ) {
+				update_option( 'apsm_status', '0' );
+			}
+		}
+	);
+
+	/**
 	 *  Load class.
 	 */
 	require_once plugin_dir_path( __FILE__ ) . '/src/class-application-passwords.php';
