@@ -55,6 +55,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 		 */
 		private function __construct() {
 	        add_filter( 'admin_init', array( $this, 'register' ) );
+			add_filter( 'plugin_action_links', array( $this, 'add_plugin_link' ), 10, 2 );
 	    }
 
 		/**
@@ -127,6 +128,24 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 					<?php esc_html_e( 'Disable Application Passwords.', 'application-passwords-manager' ); ?>
 				</label>
 			<?php
+		}
+
+		/**
+		 * Add Settings link.
+		 *
+		 * @param array  $plugin_actions An array of plugin action links.
+		 * @param string $plugin_file    Path to the plugin file relative to the plugins directory.
+		 *
+		 * @link https://developer.wordpress.org/reference/hooks/plugin_action_links/
+		 * @return array $plugin_actions.
+		 */
+		public function add_plugin_link( $plugin_actions, $plugin_file ) {
+			$apsm_actions = array();
+			if ( APSM_DIR . '/appsm.php' === $plugin_file ) {
+				$setlink = esc_url( admin_url( 'options-general.php#apsm_status' ) );
+				$apsm_actions['apm_settings'] = sprintf( __( '<a href="%s">Settings</a>', 'application-passwords-manager' ), $setlink ); // @codingStandardsIgnoreLine
+			}
+			return array_merge( $apsm_actions, $plugin_actions );
 		}
 
 	}
