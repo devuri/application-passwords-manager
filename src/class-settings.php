@@ -73,7 +73,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 					'description'       => 'disable application passwords',
 					'sanitize_callback' => 'absint',
 					'show_in_rest'      => true,
-					'default'           => 1,
+					'default'           => 0,
 				),
 			);
 
@@ -116,7 +116,7 @@ if ( ! class_exists( 'SwitchWeb\Settings' ) ) {
 		 */
 		private function checkbox_input() {
 
-			if ( true === $this->disable_status() ) {
+			if ( 1 === absint( get_option( $this->settings_field, 0 ) ) ) {
 				$checked = 'checked';
 			} else {
 				$checked = '';
