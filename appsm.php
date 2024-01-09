@@ -10,12 +10,12 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Application Passwords Manager
- * Plugin URI:        https://switchwebdev.com/wordpress-plugins/
+ * Plugin URI:        https://wpbrisko.com/wordpress-plugins/
  * Description:       This plugin will disable/enable WordPress 5.6 Application Passwords.
- * Version:           0.2.1
+ * Version:           0.3.1
  * Requires at least: 5.6
  * Requires PHP:      5.6
- * Author:            Uriel Wilson
+ * Author:            uriel
  * Author URI:        https://urielwilson.com
  * Text Domain:       application-passwords-manager
  * Domain Path:       languages
